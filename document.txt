@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------------
+Note : Your terminal path should be present in the project root location.I have created the project using go 1.19 so better use that version to build and run the project.
+
+To Run the Code type below in the terminal
+go run main.go
+
+All the critical errors and input data and output result will be shown in the terminal
+------------------------------------------------------------------------------------------
+To Run all the unit tests type the below command
+go test -v ./...
+
+-----------------------------------------------------------------------------------------
+
+LIMITATIONS
+Input I am taking from file peopledetails.txt placed in folder inputdata.This path is hardcoded.Add/Update input data with the format mentioned in README file in peopledetails.txt file
+
+THINGS WHICH COULD BE IMPROVED
+1)Not checking the duplicate values coming in the input.
+2)More scope of decoupling and improving code coverage like functionality of taking input from file could be  implemented via interface
+3) I am parsing input data two times.If the data is huge then i have to change the logic to get the results in one pass
